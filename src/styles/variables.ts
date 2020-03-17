@@ -1,13 +1,13 @@
 /* eslint-disable max-len */
 
 export const colors = {
-  brand: '#663399',
+  brand: '#004A8F',
   lilac: '#9d7cbf',
   accent: '#ffb238',
   success: '#37b635',
   warning: '#ec1818',
   ui: {
-    bright: '#e0d6eb',
+    bright: '#D0D0D3',
     light: '#f5f3f7',
     whisper: '#fbfafc'
   },
@@ -17,8 +17,8 @@ export const colors = {
     copy: 'hsla(270, 15.797828016000002%, 0%, 0.88)',
     calm: 'rgba(0, 0, 0, 0.54)'
   },
-  white: '#fff',
-  black: '#000'
+  white: 'rgba(243,243,243,1)',
+  black: '#111'
 }
 
 export const fonts = {
@@ -44,6 +44,8 @@ export const widths = {
 
 export const dimensions = {
   fontSize: {
+    xsmall: 12,
+    small: 14,
     regular: 16,
     large: 18
   },
