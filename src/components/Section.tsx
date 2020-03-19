@@ -17,7 +17,7 @@ const Title = styled.h2`
     bottom: -3px;
     left: 0;
     height: 3px;
-    min-width: ${widths.md}px;
+    min-width: 300px;
     width: 50%;
     background: ${colors.brand};
     background: linear-gradient(to right, ${colors.brand} 0%, transparent 100%);

@@ -26,7 +26,7 @@ const jobsData: Job[] = [
     contract: true
   },
   {
-    company: 'Solution Media 360',
+    company: 'Solutions Medias 360',
     startDate: 'April 2014',
     endDate: 'December 2018',
     jobTitle: 'Fullstrack Developer & Front-End Technical Lead'
@@ -48,7 +48,7 @@ const JobDates = styled.span`
 
 const Experiences: React.FC = () => {
   return (
-    <List>
+    <List id="experiences">
       {jobsData.map(({ company, startDate, endDate, jobTitle, contract }) => (
         <BlankItem>
           <>

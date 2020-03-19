@@ -3,12 +3,14 @@ import styled from '@emotion/styled'
 import { transparentize } from 'polished'
 import { Link } from 'gatsby'
 
-import { heights, dimensions, colors } from '../styles/variables'
+import { heights, dimensions, colors, breakpoints } from '../styles/variables'
 import Container from './Container'
+import LogoLight from '../logo_light.svg'
+import { List, BlankItem } from './styled'
 
 const StyledHeader = styled.header`
   height: ${heights.header}px;
-  padding: 0 ${dimensions.containerPadding}rem;
+  padding: 5px ${dimensions.containerPadding}rem;
   background-color: ${colors.brand};
   color: ${transparentize(0.5, colors.white)};
 `
@@ -30,15 +32,45 @@ const HomepageLink = styled(Link)`
     text-decoration: none;
   }
 `
+const Nav = styled.nav`
+  margin-left: auto;
+`
 
-interface HeaderProps {
-  title: string
-}
+const Menu = styled(List)`
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
 
-const Header: React.FC<HeaderProps> = ({ title }) => (
+  @media (max-width: ${breakpoints.sm}px) {
+    width: 250px;
+  }
+`
+
+const MenuItem = styled(BlankItem)``
+
+const MenuLink = styled.a`
+  color: ${colors.white};
+`
+
+const Header: React.FC = () => (
   <StyledHeader>
     <HeaderInner>
-      <HomepageLink to="/">{title}</HomepageLink>
+      <HomepageLink to="/">
+        <img src={LogoLight} alt="Francis Provost's Logo" height={heights.header - 10} />
+      </HomepageLink>
+      <Nav>
+        <Menu>
+          <MenuItem>
+            <MenuLink href="/#experiences">Experiences</MenuLink>
+          </MenuItem>
+          <MenuItem>
+            <MenuLink href="/#technos">Technos</MenuLink>
+          </MenuItem>
+          <MenuItem>
+            <MenuLink href="/#contact">Contact</MenuLink>
+          </MenuItem>
+        </Menu>
+      </Nav>
     </HeaderInner>
   </StyledHeader>
 )
