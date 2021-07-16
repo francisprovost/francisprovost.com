@@ -1,11 +1,10 @@
 import * as React from 'react'
 import styled from '@emotion/styled'
 import { transparentize } from 'polished'
-import { Link } from 'gatsby'
+import Link from 'next/link'
 
 import { heights, dimensions, colors, breakpoints } from '../styles/variables'
 import Container from './Container'
-import LogoLight from '../logo_light.svg'
 import { List, BlankItem } from './styled'
 
 const StyledHeader = styled.header`
@@ -55,8 +54,8 @@ const MenuLink = styled.a`
 const Header: React.FC = () => (
   <StyledHeader>
     <HeaderInner>
-      <HomepageLink to="/">
-        <img src={LogoLight} alt="Francis Provost's Logo" height={heights.header - 10} />
+      <HomepageLink href="/">
+        <img src="/logo_light.svg" alt="Francis Provost" height={heights.header - 10} />
       </HomepageLink>
       <Nav>
         <Menu>

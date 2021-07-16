@@ -1,7 +1,7 @@
 import * as React from 'react'
 import styled from '@emotion/styled'
 import Container from './Container'
-import { widths, colors, dimensions } from '../styles/variables'
+import { colors, dimensions } from '../styles/variables'
 
 const SectionRoot = styled(Container)`
   margin: ${dimensions.containerPadding * 2}em 0;
