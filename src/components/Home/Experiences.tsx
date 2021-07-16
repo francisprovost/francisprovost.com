@@ -13,9 +13,15 @@ interface Job {
 
 const jobsData: Job[] = [
   {
-    company: 'Vertigo Innovation',
-    startDate: 'January 2019',
+    company: 'Centre de Recherche du Centre hospitalier Sainte-Justine',
+    startDate: 'November 2020',
     endDate: 'Today',
+    jobTitle: 'Front-end Developer'
+  },
+  {
+    company: 'Vertigo Innovation / Chrono Innovation',
+    startDate: 'January 2019',
+    endDate: 'November 2020',
     jobTitle: 'Fullstrack Developer'
   },
   {

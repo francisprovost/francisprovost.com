@@ -1,27 +1,23 @@
 {
-  "name": "gatsby-starter-typescript-plus",
-  "description": "A starter kit for TypeScript-based Gatsby projects with sensible defaults.",
-  "version": "1.0.0",
+  "name": "francisprovost.com",
+  "description": "My personal website",
+  "version": "2.0.0",
   "private": true,
-  "author": "Resi Respati <resir014@gmail.com>",
-  "keywords": [
-    "gatsby"
-  ],
+  "author": "Francis Provost <jobs@francisprovost.com>",
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
     "clean": "rimraf public",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "dev": "gatsby develop",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "format": "prettier --write \"src/**/*.{ts,tsx,md}\"",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
-    "start": "npm run dev",
     "test": "npm run type-check && npm run lint",
     "type-check": "tsc"
   },
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=14.0.0"
   },
   "dependencies": {
     "@emotion/core": "^10.0.10",
@@ -33,31 +29,15 @@
     "@fortawesome/react-fontawesome": "^0.1.9",
     "babel-plugin-styled-components": "^1.10.1",
     "classnames": "^2.2.6",
-    "gatsby": "^2.10.0",
-    "gatsby-image": "^2.2.1",
-    "gatsby-plugin-canonical-urls": "^2.1.0",
-    "gatsby-plugin-emotion": "^4.1.0",
-    "gatsby-plugin-react-helmet": "^3.1.0",
-    "gatsby-plugin-sharp": "^2.2.1",
-    "gatsby-plugin-typescript": "^2.1.0",
-    "gatsby-remark-copy-linked-files": "^2.1.0",
-    "gatsby-remark-images": "^3.1.0",
-    "gatsby-remark-prismjs": "^3.3.0",
-    "gatsby-remark-responsive-iframe": "^2.2.0",
-    "gatsby-remark-smartypants": "^2.1.0",
-    "gatsby-source-filesystem": "^2.1.56",
-    "gatsby-transformer-json": "^2.2.28",
-    "gatsby-transformer-remark": "^2.5.0",
-    "gatsby-transformer-sharp": "^2.2.0",
     "modern-normalize": "^0.5.0",
+    "next": "^11.0.1",
     "normalize.css": "^8.0.1",
     "polished": "^3.4.1",
     "prism-themes": "^1.1.0",
     "prismjs": "^1.16.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1",
-    "typescript": "^3.5.2"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.3.5"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.8",
@@ -71,7 +51,6 @@
     "eslint-config-blvd": "^1.0.0",
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-prettier": "^3.1.1",
-    "gh-pages": "^2.0.1",
     "prettier": "^1.18.2",
     "rimraf": "^2.6.3"
   }
