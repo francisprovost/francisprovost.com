@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
+import Link from 'next/link'
 
 import Page from '../components/Page'
 import Container from '../components/Container'
@@ -11,7 +11,7 @@ const NotFoundPage = () => (
       <Container>
         <h1>404: Page not found.</h1>
         <p>
-          You've hit the void. <Link to="/">Go back.</Link>
+          You've hit the void. <Link href="/">Go back.</Link>
         </p>
       </Container>
     </Page>
